@@ -26,7 +26,11 @@ function signUp(){
     if(name=="" || email=="" || password=="" || confirmPassword==""){
         message.style.color="red";
         message.textContent="Error : All the fields are mandatory";
-        console.log(123);
+    }
+    else if(password!=confirmPassword){
+        message.style.color="red";
+        message.textContent="Error : Password do not match";
+     
     }
     else{
         message.style.color="green";
