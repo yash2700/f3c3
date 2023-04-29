@@ -1,3 +1,8 @@
+window.onload=function(){
+    if(localStorage.getItem("access-token")!=null){
+        window.location.href="./profile.html";
+    }
+}
 var signUpButton=document.getElementById("signup");
 var form=document.getElementsByTagName("form");
 var message=document.getElementById("error-success");
